@@ -1,6 +1,6 @@
 # TimeInABottle-de
 Die deutsche Übersetzung des Spigot Plugins **Time In A Bottle** von *Foxxite*.  
-https://www.spigotmc.org/resources/automobfarm-a-simple-way-to-automate-mob-farms.75670/
+https://www.spigotmc.org/resources/time-in-a-bottle.75022/
 
 # Installation
 1. Downloade und installiere das offizielle **Time In A Bottle** Plugin (https://www.spigotmc.org/resources/time-in-a-bottle.75022/)  
