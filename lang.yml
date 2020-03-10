@@ -1,0 +1,88 @@
+#   Übersetzt von Grabenkind
+#   Bei Rechtschreibfehlern bitte kontaktieren
+#   Kontakt: grabenkind@gmail.com
+#   
+#   Dieses Plugin wird von Foxxite entwickelt!
+#   Alle Fehler die keine Rechtschreibfehler sind,
+#   müssen dem Entwickler selbst berichtet werden.
+
+#
+# FASSE DAS NICHT AN
+#
+file-version: 1
+
+#
+# Plugin Diverse Nachrichten:
+#
+prefix:               "&8[&eTIAB&8]&r"
+reload:               "{prefix} &aDas Plugin wurde neu geladen."
+time-format:          "{hours} Std. | {minutes} Min. | {seconds} Sek."
+key-missing:          "{prefix} &cNachricht mit Schlüssel: &o`{key}` &cnicht gefunden!"
+
+#
+# Plugin Boot Meldungen:
+#
+register-commands:    "{prefix} Registriere Befehle"
+register-recipes:     "{prefix} Registriere Rezepte"
+register-tasks:       "{prefix} Registriere Aufgaben"
+register-events:      "{prefix} Registriere Ereignisse"
+
+#
+# Plugin Abschaltmeldungen:
+#
+unregister-commands:  "{prefix} Melde Befehle ab"
+unregister-recipes:   "{prefix} Melde Rezept ab"
+unregister-tasks:     "{prefix} Melde Aufgaben ab"
+unregister-events:    "{prefix} Melde Ereignisse ab"
+
+#
+# Objekt Kunde
+#
+# Aufgrund der Funktionsweise des Plugins solltest du die {metaDataDoNotReplaceMe}-Zeilen
+# nicht verschieben oder ersetzen. Wenn du sie verschiebst oder ersetzt, wird die ersetzte Zeile ignoriert.
+#
+bottle-lore:
+  - "&7Gesammelte Spielzeit:"
+  - "&7{timeFormat}" #Du kannst hier entweder den {timeFormat}-Platzhalter oder die Platzhalter {hours}, {minutes} und {seconds} verwenden
+  - "&0{metaDataDoNotReplaceMe}"
+  - "&7&oZeit wird nur dann gesammelt, wenn sich dieser"
+  - "&7&oGegenstand im Inventar eines Spielers befindet."
+  - "&0{metaDataDoNotReplaceMe}"
+
+#
+# Spieler Nachrichten
+# PAPI Platzhalter können hier verwendet werden
+#
+not-enough-time:      "{prefix} &cDu hast nicht genug Zeit in deiner Flasche, um diesen Block zu beschleunigen."
+no-multi-craft:       "{prefix} &cAufgrund einer Beschränkung kannst du keine Zeitflaschen shift craften. Entschuldige die Unannehmlichkeiten."
+
+#
+# Befehls Abschnitt
+# PAPI Platzhalter können hier verwendet werden
+#
+no-permission:        "{prefix} &cDu hast keine Berechtigung, diesen Befehl auszuführen."
+not-player:           "{prefix} &cNur Spieler können diesen Befehl ausführen."
+player-missing:       "{prefix} &cDu hast keinen Spieler angegeben."
+player-not-found:     "{prefix} &cKein Spieler mit dem Namen {target} gefunden."
+
+give-bottle:          "{prefix} &aWenn {target} Platz im Inventar hat, solltest du die Zeitflasche erhalten haben."
+time-added:           "{prefix} &aDie gespeicherte Zeit wurde erhöht um &7{timeAdded} &aSekunden / &7{timeFormat}&a."
+time-invalid:         "{prefix} &cDer Zeitparameter ist ungültig."
+time-empty:           "{prefix} &cDu hast keine Zeit angegeben."
+no-bottle:            "{prefix} &cDu hältst keine Zeitflasche!"
+
+received-bottle:      "{prefix} &eDu hast eine Zeitflasche erhalten."
+inventory-full:       "{prefix} &cEs gibt keinen Platz in deinem Inventar, um dir eine Zeitflasche zu geben."
+
+help-message:
+  - "&3&m====================================================="
+  - "&eTime In A Bottle v{version} von &f{author}"
+  - ""
+  - "&bBefehle:"
+  - "&7/tiab getBottle &eGibt dir eine Zeitflasche."
+  - "&7/tiab giveBottle <player> &eGibt einem Spieler eine Zeitflasche."
+  - "&7/tiab addTime <TimeInSeconds> &eFügt der Flasche, die der Spieler hält, Zeit hinzu."
+  - "&7/tiab reload &eLädt die lang Datei neu."
+  - ""
+  - "&8Dieses Plugin wurde durch den Random Things Mod inspiriert."
+  - "&3&m====================================================="
