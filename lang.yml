@@ -18,6 +18,15 @@ prefix:               "&8[&eTIAB&8]&r"
 reload:               "{prefix} &aDas Plugin wurde neu geladen."
 time-format:          "{hours} Std. | {minutes} Min. | {seconds} Sek."
 key-missing:          "{prefix} &cNachricht mit Schlüssel: &o`{key}` &cnicht gefunden!"
+update:
+  - "&7&m====================================================="
+  - ""
+  - "&f Es gibt ein Update für &eTime In A Bottle&f!"
+  - "&f Du verwendest &e{version}&f, doch &e{newVersion}&f wurde veröffentlicht!"
+  - "&f Hier kannst du die neueste Version herunterladen:"
+  - "&d {updateUrl}"
+  - ""
+  - "&7&m====================================================="
 
 #
 # Plugin Boot Meldungen:
